@@ -14,4 +14,4 @@ app.get('/api/timestamp/:date_string?',(req,res)=>{
     dic.utc= dat.toUTCString()
     res.json(dic)
 })
-app.listen(3333,()=>console.log('server started'))
+app.listen(process.env.PORT,()=>console.log('server started'))
